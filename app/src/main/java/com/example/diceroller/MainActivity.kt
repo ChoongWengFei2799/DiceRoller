@@ -25,9 +25,8 @@ class MainActivity : AppCompatActivity() {
         val randomInt1 = (1..6).random()
         val randomInt2 = (1..6).random()
         val randomInt3 = (1..6).random()
-        val plus = " + "
         val total = randomInt1 + randomInt2 + randomInt3
-        val text = randomInt1.toString() + plus + randomInt2.toString() + plus + randomInt3.toString()
+        val text = "$randomInt1 + $randomInt2 + $randomInt3 ="
 
         val resultText1: TextView = findViewById(R.id.first)
         val resultText: TextView = findViewById(R.id.result_text)
